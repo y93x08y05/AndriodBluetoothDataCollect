@@ -131,22 +131,6 @@
                     android:minWidth="100dp"
                     android:text="@string/white_list_bs_value"
                     android:textColor="@android:color/holo_green_light" />
-
-                <EditText
-                    android:id="@+id/white_list_wifi"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="0"
-                    android:width="100dp"
-                    android:height="100dp"
-                    android:background="@android:color/white"
-                    android:hint="@string/white_list_wifi"
-                    android:maxHeight="200dp"
-                    android:maxWidth="200dp"
-                    android:minHeight="100dp"
-                    android:minWidth="100dp"
-                    android:text="@string/white_list_wifi_value"
-                    android:textColor="@android:color/holo_green_light" />
             </LinearLayout>
         </LinearLayout>
 

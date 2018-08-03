@@ -51,7 +51,6 @@ import com.example.t_tazhan.ms.taskAdapter.DumpBsTask;
 import com.example.t_tazhan.ms.util.BleUtil;
 import com.example.t_tazhan.ms.util.DateUtil;
 import com.example.t_tazhan.ms.util.FFT4g;
-import com.example.t_tazhan.ms.util.ScannedAp;
 import com.example.t_tazhan.ms.util.ScannedDevice;
 
 import java.lang.ref.WeakReference;
@@ -229,7 +228,6 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
                 s[i] = bf.getShort();
             }
 
-            //FFT
             FFT4g fft = new FFT4g(FFT_SIZE);
             double[] FFTdata = new double[FFT_SIZE];
             for (int i = 0; i < FFT_SIZE; i++) {
