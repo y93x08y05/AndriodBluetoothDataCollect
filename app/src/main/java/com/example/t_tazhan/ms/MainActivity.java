@@ -26,6 +26,7 @@ import android.os.Build;
 import android.os.CountDownTimer;
 import android.os.Environment;
 import android.os.Handler;
+import android.os.Looper;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.UtteranceProgressListener;
 import android.os.Bundle;
@@ -658,7 +659,11 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         if ((mBTAdapter != null) && (!mIsScanning)) {
             mBTAdapter.startLeScan(this);
             mIsScanning = true;
-            new Handler().post(new Runnable() {
+            /**
+             *
+             */
+            Handler handler=new Handler(Looper.getMainLooper());
+            handler.post(new Runnable() {
                 @Override
                 public void run() {
                     setProgressBarIndeterminateVisibility(true);
@@ -673,7 +678,8 @@ public class MainActivity extends Activity implements BluetoothAdapter.LeScanCal
         if (mBTAdapter != null)
             mBTAdapter.stopLeScan(this);
         mIsScanning = false;
-        new Handler().post(new Runnable() {
+        Handler handler=new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
             @Override
             public void run() {
                 setProgressBarIndeterminateVisibility(false);

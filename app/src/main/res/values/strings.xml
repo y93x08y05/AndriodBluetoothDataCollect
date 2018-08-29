@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <resources>
-    <string name="app_name">MS定位小助手</string>
+    <string name="app_name">MS匡博</string>
     <string name="ble_not_supported">BLE not supported</string>
     <string name="bt_not_supported">Bluetooth not supported</string>
     <string name="bt_not_enabled">Not enabled</string>
@@ -15,7 +15,7 @@
     <string name="action_dump">DUMP</string>
     <string name="action_license">LICENSE</string>
     <!-- dialog -->
-    <string name="license_title">Andriod Bluetooth LICENSE</string>
+    <string name="license_title">Android Bluetooth LICENSE</string>
     <string name="license_body">Jack/BluetoothSignalDetector\nhttps://github.com/y93x08y05/AndriodBluetoothDataCollect</string>
     <!-- dump -->
     <string name="dump_failed">Dump Failed.</string>
